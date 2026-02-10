@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class SquareRootInteger {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int number = sc.nextInt(); 
+        int sqrt = (int)Math.sqrt(number); 
+        
+        System.out.println(sqrt); 
+        
+        sc.close();
+    }
+}
+output:
+16
+4
