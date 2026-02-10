@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int base=sc.nextInt();
+        int power=sc.nextInt();
+        int m=1;
+        for(int i=1;i<=power;i++){
+            m=m*base;
+        }
+        System.out.println(m);
+    }
+}
+output:
+5
+2
+25
