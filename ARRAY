@@ -83,4 +83,88 @@ OUTPUT:
 10 20 30 40 
 sum =100
 
+#product of array
+import java.util.*;
+public class Main {
+	public static void main(String[]args) {
+		Scanner sc= new Scanner(System.in);
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		for(int i=0;i<size;i++){
+		    arr[i]=sc.nextInt();
+		}
+	    for(int i=0;i<size;i++){
+		    System.out.print(arr[i]+" ");
+		}
+		int product=1;
+		for(int i=0;i<size;i++){
+		    product=product*arr[i];
+		}
+	    System.out.println("\nproduct =" +product);   
+	}
+}
+OUTPUT:
+2
+6
+7
+6 7 
+product =42
 
+
+#sum even and odd separately
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int size = sc.nextInt();
+	   int arr[]= new int[size];
+	   for(int i=0;i<size;i++){
+	   arr[i]=sc.nextInt();
+	   }
+	   int oddsum =0;
+	   int evensum=0;
+	   for(int i=0;i<size;i++){
+	       if(arr[i]%2==0){
+	         evensum=evensum+arr[i];
+	       }
+	       else{
+	         oddsum=oddsum+arr[i];
+	       }
+	   }
+	       System.out.print(evensum+" "+oddsum);
+}
+}
+OUTPUT:
+3
+10
+15
+20
+30 15
+
+#find the max number  in an array
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int max = arr[0];
+        for (int i = 1; i < size; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Maximum number is: " + max);
+    }
+}
+OUTPUT:
+3
+3
+4
+4
+Maximum number is: 4
