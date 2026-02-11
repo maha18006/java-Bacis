@@ -168,3 +168,63 @@ OUTPUT:
 4
 4
 Maximum number is: 4
+
+#find the min number  in an array
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int min = arr[0];
+        for (int i = 1; i < size; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println("Minimum number is: " + min);
+    }
+}
+OUTPUT:
+3
+23
+29
+17
+Minimum number is: 17
+
+#second maximun
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		for (int i = 0; i < size; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int firstmax = arr[0];
+		for (int i = 1; i < size; i++) {
+			if (arr[i] > firstmax) {
+				firstmax = arr[i];
+			}
+		}
+		int secondmax = arr[0];
+		for (int i = 1; i < size; i++) {
+			if (arr[i] > secondmax && arr[i] < firstmax) {
+				secondmax = arr[i];
+			}
+		}
+		System.out.println(secondmax);
+	}
+}
+OUTPUT:
+4
+63
+98
+81
+35
+81
