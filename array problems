@@ -1,0 +1,198 @@
+#Array Direction Print
+Print the elements from left to right in the first line. Print the elements from right to left in the second line.
+Constraints
+1 ≤ N ≤ 1000
+-10⁵ ≤ Array elements ≤ 10⁵
+
+code:
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println(); 
+
+        for (int i = size - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+5
+1
+2
+3
+4
+5
+1 2 3 4 5 
+5 4 3 2 1
+
+#Count Even and Odd Numbers
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+        for (int i = 0; i < N; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int i = 0; i < N; i++) {
+            if (arr[i] % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+        System.out.println("Even: " + evenCount);
+        System.out.println("Odd: " + oddCount);
+    }
+}
+OUTPUT:
+5
+73
+98
+100
+57
+66
+Even: 3
+Odd: 2
+
+
+
+#Search an Element
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+        for (int i = 0; i < N; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int X = sc.nextInt();
+        int index = -1;  
+        for (int i = 0; i < N; i++) {
+            if (arr[i] == X) {
+                index = i;
+                break;   
+            }
+        }
+        System.out.println(index);
+    }
+}
+OUTPUT:
+3
+5
+8
+3
+9
+-1
+
+#Find the Maximum Element in an Array
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        System.out.println(max);
+      
+    }
+}
+OUTPUT:
+3
+2
+50
+33
+50
+
+#Find the Minimum Element in an Array
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+            if (num < min) {
+                min = num;
+            }
+        }
+
+        System.out.println(min);
+       
+    }
+}
+OUTPUT:
+4
+21
+23
+25
+78
+21
+
+#Alternate Index Product
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        long evenProduct = 1;
+        long oddProduct = 1;
+
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+
+            if (i % 2 == 0) {
+                evenProduct *= num;
+            } else {
+                oddProduct *= num;
+            }
+        }
+
+        System.out.println(evenProduct);
+        System.out.println(oddProduct);
+
+    }
+}
+
+OUTPUT:
+3
+4
+5
+8
+32
+5
