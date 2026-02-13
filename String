@@ -1,0 +1,217 @@
+#Basic
+import java.util.*;
+public class Main {
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		String str="innate talent";
+		String str1=sc.next();
+		sc.nextline();
+		String str2=sc.nextline();
+		System.out.println(str1);
+		System.out.println(str2);
+	
+	}
+}
+
+OUTPUT:
+innate
+innate talent
+
+
+compareTO()=int
+compareToIgnoreCase()=int
+concat()=string
+contains()
+length()=int
+lastIndexOf()=int
+indexOf()=int
+isEmpty()=boolean
+endsWith()=boolean
+equals()=boolean
+equalsIgnoreCase()=Boolean
+replace()=string
+replaceFirst()=string
+replaceAll()=string
+split()=string[]
+toLowerCase()=String
+toString()=String
+toUpperCase()=String
+trim()=String
+valueOf()=String
+
+2.compareTO()
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "Innate Talent";
+  System.out.println(str.compareTo(str1));
+  }
+}
+
+OUTPUT:
+32
+
+3.compareToIgnoreCase():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "Innate Talent";
+  System.out.println(str.compareToIgnoreCase(str1));
+  }
+}
+OUTPUT:
+0
+
+4.concat():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "Innate Talent";
+  System.out.println(str.concat(str1));
+  }
+}
+OUTPUT:
+innate talentInnate Talent
+
+5.contains()
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.contains(str1));
+  }
+}
+OUTPUT:
+true
+
+6.length():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.length());
+  }
+}
+OUTPUT:
+13
+
+7.indexOf():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.indexOf('t'));
+  }
+}
+OUTPUT:
+4
+
+8.lastIndexOf():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.lastIndexOf('t'));
+  }
+}
+OUTPUT:
+12
+
+9.equals()
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.equals(str1));
+  }
+}
+OUTPUT:
+true
+
+10.equalsIgnoreCase()
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  System.out.println(str.equalsIgnoreCase(str1));
+  }
+}
+OUTPUT:
+true
+
+11.endsWith()
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "talent";
+  System.out.println(str.endsWith(str1));
+  }
+}
+OUTPUT:
+true
+
+12.split():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = "innate talent";
+  String str1 = "innate talent";
+  String arr[] = str.split("a");
+  for(int i=0;i<arr.length;i++){
+  System.out.println(arr[i]);
+  }
+  }
+}
+OUTPUT:
+inn
+te t
+lent
+
+13.trim():
+PROGRAM:
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+  Scanner sc = new Scanner(System.in);
+  String str = " innate talent ";
+  String str1 = "innate talent";
+  String arr[] = str.split("a");
+  for(int i=0;i<arr.length;i++){
+  System.out.println(str.trim());
+  }
+  }
+}
+OUTPUT:
+innate talent
