@@ -1,0 +1,147 @@
+**oops:**
+**object-oriented programming:**
+* object
+* class
+* inheritance
+* polymorphism
+* abstraction
+* encapusulation
+
+
+
+**global data:**
+fun1()
+fun2()
+fun3()
+
+
+
+**object:data**
+fun1()
+fun2()
+
+
+
+**object data:**
+fun1()
+fun2()
+
+
+
+**object:**
+1. state
+2. behaviour
+3. identity
+
+
+
+**A class in java can contains:**
+* fields
+* methods
+* constructors
+* blocks
+* nested class and interface
+
+new keyword:Used to allocated memory at runtime.All objects get memory in Heap memory area.
+
+
+
+Ways to initialize object:
+By reference variable-Intializing object simply means storing data into object
+By method
+By 
+
+OBJECT AND CLASS EXAMPLE:MAIN WITHIN CLASS:
+class Student
+{
+  int id;
+  String name;
+  
+  public static void main(String args[])
+  {
+    Student s1=new Student();
+    System.out.println(s1.id);
+    System.out.println(s1.name);
+  }
+}
+
+OBJECT AND CLASS EXAMPLE:MAIN OUTSIDE CLASS
+class Student
+{
+  int id;
+  String name;
+}
+class TestStudent1
+{
+  public static void main(String args[])
+  {
+    Student s1=new Student();
+    System.out.println(s1.id);
+    System.out.println(s1.name);
+  }
+}
+
+#
+class Student
+{
+  int reg;
+  String name;
+  void assign(int r,String n){
+    reg = r;
+    name = n;
+  }
+  void print(){
+    System.out.println(reg+" "+name);
+  }
+}
+public class Main{
+
+  public static void main(String args[])
+  {
+    Student m1 = new Student();
+    m1.assign(101,"arun");
+    Student m2 = new Student();
+    m2.assign(102,"Karthick");
+    m1.print();
+    m2.print();
+  }
+}
+
+constructor:
+to initialize the object
+constructor is invoked at the time of object creation
+
+types:
+default constructor
+parameterized constructor
+
+
+Rules:
+Constructor name must be same as its class name
+Constructor must have no explicit return type
+
+polymorphism:
+polymorphism means many forms
+Achieved in 2 ways:
+compile time polymorphism -Method Overloading
+Runtime polymorphism-Method Overriding
+
+Abstraction:
+process of hiding the implementation details and showing only functionality to the user.
+Abstraction lets you focus on what the object does instead of how it does it.
+Ways to achieve Abstraction:
+1.Abstract class
+2.interface
+
+Encapsulation:
+process of wrapping code and data together into a single unit.
+can make the class read-only or write only methods to set & get the data in it.
+control over the data
+
+
+
+
+
+
+
+
