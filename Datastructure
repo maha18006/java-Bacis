@@ -1,0 +1,53 @@
+#Data structure
+1.primitive(int,byte,short,float,long,double,boolean)
+2.non primitive
+   1.linear [static(array),dynamic(linked list,stack,queue)]
+   2.non linear [Tree,graph]
+
+
+Linked list:
+1.singly
+2.doubly
+3.circular
+
+Linked List Data Structure:
+linear data structure that includes a series of connected nodes.
+each node stores the data and the address of the next node.
+Head-> data|next -> data|next -> data|next ->Null
+
+Singly linked list:
+basic linked list type
+collection of nodes linked together in a sequential 
+each node of singly linked list contains a data field and an address field 
+contains the reference of the next node.
+
+class Node{
+  int data;
+  Node next;
+}
+
+
+#Linked List:
+public class Main {
+    public static void main(String[] args) {
+      Node n1 = new Node();
+      n1.data = 10;
+      n1.next = null;
+      Node n2 = new Node();
+      n2.data = 20;
+      n1.next = n2;
+      n2.next=null;
+      Node n3 = new Node();
+      n3.data = 30;
+      n2.next = n3;
+      n3.next=null;
+      Node head = n1;
+      System.out.println(head.data);
+      System.out.println(head.next.data);
+      System.out.println(head.next.next.data);
+    }
+}
+OUTPUT:
+10
+20
+30
